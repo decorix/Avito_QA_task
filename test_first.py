@@ -85,7 +85,7 @@ def test_set_value(page):
         print("Элемент не найден")
         return
 
-    value = "1000"
+    value = "-1"
     page.eval_on_selector('.desktop-value-Nd1tR', f'(element, value) => element.innerText = value', value)
 
     counter = page.locator(".desktop-wrapper-OutiE")
